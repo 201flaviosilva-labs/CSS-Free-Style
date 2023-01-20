@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", "Courier New", Courier, monospace;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+h1 {
+  color: white;
+}
+
+h1#scaleFIT {
+  width: 100%;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-size: 20px;
+}
+
+#FPS {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1px;
+  padding: 2px 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  box-shadow: 0 0 4px yellow;
+  z-index: 1;
+}
+
+canvas {
+  border: 1px solid red;
+  border-radius: 4px;
+  box-shadow: 0 0 20px red;
+}

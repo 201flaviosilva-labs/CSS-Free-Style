@@ -1,0 +1,37 @@
+{
+  "name": "css-free-style",
+  "version": "1.3.0",
+  "description": "Just simple utils for css :)",
+  "homepage": "https://201flaviosilva-labs.github.io/CSS-Free-Style/",
+  "author": "201flaviosilva",
+  "license": "MIT",
+  "files": [
+    "build/",
+    "src/",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "clear": "rm -rf build",
+    "compile": "css-minify -d src/ -o build",
+    "build": "npm run clear && npm run compile",
+    "bump": "npm run build && np"
+  },
+  "devDependencies": {
+    "css-minify": "^2.0.0",
+    "np": "^7.6.3"
+  },
+  "keywords": [
+    "utils",
+    "css",
+    "canvas"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/201flaviosilva-labs/CSS-Free-Style.git"
+  },
+  "bugs": {
+    "url": "https://github.com/201flaviosilva-labs/CSS-Free-Style/issues"
+  }
+}
