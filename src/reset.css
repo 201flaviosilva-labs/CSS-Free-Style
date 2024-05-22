@@ -1,16 +1,44 @@
 * {
   margin: 0;
   padding: 0;
+  min-width: 0;
+  font: inherit;
   box-sizing: border-box;
   color: black;
   font-family: "Courier New", Courier, monospace;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   width: 100svw;
-  height: 100svh;
+  min-height: 100dvh;
   overflow-x: hidden;
+}
+
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
 }
 
 ul li {
@@ -38,8 +66,4 @@ select,
 option,
 textarea {
   cursor: pointer;
-}
-
-a {
-  text-decoration: none;
 }
